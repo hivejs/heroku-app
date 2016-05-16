@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Your hive.js instance",
   "scripts": {
-    "start": "hive_http_port=PORT hive -s http -s queue"
+    "start": "hive_http_port=$PORT hive -s http -s queue"
   },
   "dependencies": {
     "hive-core": "0.7.x",
