@@ -1,0 +1,38 @@
+{
+  "ui": {
+    "baseURL": "http://localhost:1235",
+    "debug": false
+  },
+  "http": {
+    "port": 1235
+  },
+  "orm": {
+    "adapters": [
+      "sails-mysql"
+    ],
+    "connections": {
+      "default": {
+        "host": "localhost",
+        "port": 3306,
+        "user": "YOUR USERNAME HERE",
+        "password": "YOUR PASSWORD HERE",
+        "database": "YOUR DB NAME HERE",
+        "adapter": "sails-mysql"
+      }
+    }
+  },
+  "authToken": {
+    "secret": "sssh"
+  },
+  "queue": {
+    "port": 12351,
+    "address": "127.0.0.1"
+  },
+  "logger": {
+    "appenders": [
+      {
+        "type": "console"
+      }
+    ]
+  }
+}

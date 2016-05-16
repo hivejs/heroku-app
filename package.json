@@ -1,0 +1,25 @@
+{
+  "name": "Hive.js",
+  "version": "0.1.0",
+  "description": "Your hive.js instance",
+  "scripts": {
+    "start": "hive_http_port=PORT hive -s http -s queue"
+  },
+  "dependencies": {
+    "hive-core": "0.7.x",
+    "hive-interface-rest-api": "0.7.x",
+    "hive-interface-shoe": "0.6.x",
+    "hive-ui": "0.7.x",
+    "hive-plugin-import": "0.2.x",
+    "hive-plugin-export": "0.2.x",
+    "gulf": "4.x",
+    "architect": "0.1.x",
+    "sails-mysql": "*",
+    "hive-broadcast-memory": "*",
+    "hive-editor-text-codemirror": "*",
+    "hive-editor-html-ckeditor": "*",
+    "hive-editor-svg-method-draw": "*"
+  },
+  "private": true,
+  "hive": true
+}
