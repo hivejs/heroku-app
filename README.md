@@ -1,5 +1,12 @@
 # A ready-made Hive.js build for Heroku
-This repo contains a normal hive.js installation with the files necessary to deploy to heroku. It does not contain any plugins, by default, though.
+This repo contains a normal [hive.js](http://hivejs.org) installation with the files necessary to deploy to heroku. It does not contain any plugins, by default, though.
+
+## Presets
+ * DB: MySQL
+ * Real-time transport: engine.io
+ * broadcast transport: in-memory
+ * editors: CodeMirror, CKeditor, MethodDraw
+ * plugins: *none*
 
 ## Set-up
 ```
@@ -17,3 +24,5 @@ npm run build
 ```
 
 Finally, add heroku as a git remote repo and push! :sparkles:
+
+You might need to set `NODE_ENV=test` env var before starting the app, to allow hive to create the necessary MySQL tables.
