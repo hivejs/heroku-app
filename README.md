@@ -9,20 +9,32 @@ This repo contains a normal [hive.js](http://hivejs.org) installation with the f
  * plugins: *none*
 
 ## Set-up
+### 1. Get teh codez
 ```
 git clone https://github.com/hivejs/heroku-app "hivejs-heroku" && cd hivejs-heroku
 ```
 
+### 2. Get teh bling
 Next, install the plugins you want, see the [hive docs](http://docs.hivejs.org/setup/installing_plugins.html).
 ```
 npm install <...plugins separated by spaces...>
 ```
 
+### 3. Build it
 Now, you need to build the client-side code:
 ```
 npm run build
 ```
 
-Finally, add heroku as a git remote repo and push! :sparkles:
+### 4. Hero, ku!
+Add heroku as a git remote repo.
 
 You might need to set `NODE_ENV=test` env var before starting the app, to allow hive to create the necessary MySQL tables.
+
+``` 
+heroku config:set NODE_ENV=test
+```
+
+Finally you need to enable access to MySQL as [described here](https://devcenter.heroku.com/articles/cleardb#provisioning-the-add-on).
+
+That's it. Push and :sparkles:!

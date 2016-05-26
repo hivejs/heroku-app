@@ -14,11 +14,7 @@
     ],
     "connections": {
       "default": {
-        "host": "localhost",
-        "port": 3306,
-        "user": "YOUR MYSQL USER HERE",
-        "password": "YOUR MYSQL PASSWORD HERE",
-        "database": "YOUR MYSQL DB NAME HERE",
+        "url": "WILL BE SET AT RUNTIME BY NPM 'start' SCRIPT",
         "adapter": "sails-mysql"
       }
     }
