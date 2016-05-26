@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "hive ui-build"
-  , "start": "hive_http_port=$PORT hive_orm_connections_default_url=$CLEARDB_DATABASE_URL hive -s orm -s http -s queue"
+  , "start": "hive_http_port=$PORT hive_orm_connections_default_url=\"$CLEARDB_DATABASE_URL\" hive -s orm -s http -s queue"
   },
   "private": true,
   "hive": true
