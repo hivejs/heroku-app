@@ -35,6 +35,10 @@ You might need to set `NODE_ENV=test` env var before starting the app, to allow 
 heroku config:set NODE_ENV=test
 ```
 
-Finally you need to enable access to MySQL as [described here](https://devcenter.heroku.com/articles/cleardb#provisioning-the-add-on).
+Finally you need to enable access to MySQL (taken from [heroku's docs](https://devcenter.heroku.com/articles/cleardb#provisioning-the-add-on)).
+
+```
+heroku addons:create cleardb:ignite
+```
 
 That's it. Push and :sparkles:!
